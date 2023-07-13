@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Primary */
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+
+    /* Typography */
+    --font-size: 15px;
+    --lexend-deca-font: 'Lexend Deca', sans-serif;
+    --big-shoulder-display-font: 'Big Shoulders Display', 'cursive';
+}
+
+.container {
+    height: 96vh;
+    display: grid;
+    place-items: center;
+}
+
+.flex {
+    display: flex;
+    width: min(95%, 870px);
+    height: 480px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card {
+    background: yellowgreen;
+    width: 100%;
+    padding: 45px 0 0 45px;
+}
+.top-part {
+    display: flex;
+    height: 280px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 25%;
+}
+
+h2 {
+    font-family: var(--big-shoulder-display-font);
+    font-size: 38px;
+    text-transform: uppercase;
+    color: var(--very-light-gray);
+    margin-top: 5%;
+}
+p {
+    width: 85%;
+    font-family: var(--lexend-deca-font);
+    font-size: var(--font-size);
+    line-height: 1.5;
+    color: var(--transparent-white);
+    margin-bottom: 10%;
+}
+
+.btn {
+    /* display: inline-block; */
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    font-family: var(--lexend-deca-font);
+    cursor: pointer;
+    background: var(--transparent-white);
+    border: none;
+}
+.btn:hover {
+    border: 2px solid var(--very-light-gray);
+    background: transparent;
+    color: var(--very-light-gray);
+}
+
+.bright-orange{
+    background: var(--bright-orange);
+}
+.bright-orange-txt{
+    color: var(--bright-orange);
+}
+.dark-cyan{
+    background: var(--dark-cyan);
+}
+.dark-cyan-txt{
+    color: var(--dark-cyan);
+}
+.very-dark-cyan{
+    background: var(--very-dark-cyan);
+}
+.very-dark-cyan-txt{
+    color: var(--very-dark-cyan);
+}
+
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 8px;
+    font-family: var(--lexend-deca-font);
+}
+.attribution a { color: var(--very-dark-cyan); }
+
+
+@media (max-width: 680px) {
+    .container {
+        height: 100%;
+        margin: 20px 0;
+    }
+    .flex {
+        flex-wrap: wrap;
+        height: 100%;
+        width: 90%;
+        margin: 50px 0;
+    }
+    p {
+        margin-bottom: 5%;
+        width: 80%;
+    }
+}
