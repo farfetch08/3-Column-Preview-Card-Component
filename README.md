@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: https://farfetch08.github.io/3-Column-Preview-Card-Component/
+- [Solution URL](https://www.frontendmentor.io/solutions/httpsgithubcomfarfetch083columnpreviewcardcomponent-AcAOI7pZBf)
+- [Live Site URL](https://farfetch08.github.io/3-Column-Preview-Card-Component/)
 ## My process
 
 ### Built with
